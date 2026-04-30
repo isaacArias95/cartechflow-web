@@ -21,7 +21,7 @@ export default function Footer() {
                 src="/logo.png"
                 alt="CARTECHFLOW"
                 fill
-                style={{ objectFit: 'contain', objectPosition: 'left' }}
+                style={{ objectFit: 'contain', objectPosition: 'left', mixBlendMode: 'screen' }}
               />
             </div>
             <p className="text-gray-600 text-sm leading-relaxed max-w-xs">

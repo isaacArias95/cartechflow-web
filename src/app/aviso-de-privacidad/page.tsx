@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const sections = [
   {
     title: '1. Identidad y domicilio del responsable',
-    content: `CAR TECH FLOW, con domicilio en México, es responsable del tratamiento, uso y protección de los datos personales que recabamos de nuestros clientes, prospectos, usuarios, aliados comerciales y proveedores.
+    content: `CAR TECH FLOW, con domicilio en Av. Toledo 189, Hacienda Santa Fe, Tlajomulco de Zúñiga, Jalisco, México, es responsable del tratamiento, uso y protección de los datos personales que recabamos de nuestros clientes, prospectos, usuarios, aliados comerciales y proveedores.
 
 Para cualquier asunto relacionado con este Aviso de Privacidad, puede contactarnos mediante:
 • Correo electrónico: contacto@cartechflow.com
@@ -167,7 +167,7 @@ export default function AvisoDePrivacidad() {
           <p className="text-gray-500 text-sm">
             En cumplimiento con la <strong className="text-gray-400">Ley Federal de Protección de Datos Personales en Posesión de los Particulares</strong> de los Estados Unidos Mexicanos.
           </p>
-          <p className="text-gray-600 text-xs mt-2">Última actualización: 2025</p>
+          <p className="text-gray-600 text-xs mt-2">Última actualización: 30 de abril de 2026</p>
         </div>
       </div>
 

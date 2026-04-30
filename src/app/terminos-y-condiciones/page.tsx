@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const sections = [
   {
     title: '1. Identificación del prestador de servicios',
-    content: `CAR TECH FLOW (en adelante "EL PRESTADOR"), con domicilio en México, presta servicios especializados de:
+    content: `CAR TECH FLOW (en adelante "EL PRESTADOR"), con domicilio en Av. Toledo 189, Hacienda Santa Fe, Tlajomulco de Zúñiga, Jalisco, México, presta servicios especializados de:
 • Consultoría tecnológica
 • Automatización de procesos empresariales
 • Integración de APIs
@@ -166,7 +166,7 @@ El cliente podrá cancelar conforme a los plazos pactados en su contrato o plan.
     title: '16. Legislación aplicable y jurisdicción',
     content: `Los presentes términos se regirán conforme a las leyes vigentes de los Estados Unidos Mexicanos.
 
-Para cualquier controversia, las partes se someten a la jurisdicción de los tribunales competentes de México, renunciando a cualquier otro fuero que pudiera corresponderles.`,
+Para cualquier controversia, las partes se someten a la jurisdicción de los tribunales competentes de Tlajomulco de Zúñiga, Jalisco, México, renunciando a cualquier otro fuero que pudiera corresponderles.`,
   },
   {
     title: '17. Aceptación',
@@ -214,7 +214,7 @@ export default function TerminosYCondiciones() {
           <p className="text-gray-500 text-sm">
             Aplica a todos los servicios tecnológicos, consultoría y automatización ofrecidos por <strong className="text-gray-400">CAR TECH FLOW</strong> en los Estados Unidos Mexicanos.
           </p>
-          <p className="text-gray-600 text-xs mt-2">Última actualización: 2025</p>
+          <p className="text-gray-600 text-xs mt-2">Última actualización: 30 de abril de 2026</p>
         </div>
       </div>
 
