@@ -16,12 +16,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Logo & tagline */}
           <div>
-            <div className="relative w-36 h-10 mb-4">
+            <div className="relative w-20 h-20 mb-4">
               <Image
                 src="/logo.png"
                 alt="CARTECHFLOW"
                 fill
-                style={{ objectFit: 'contain', objectPosition: 'left', mixBlendMode: 'screen' }}
+                style={{ objectFit: 'contain' }}
               />
             </div>
             <p className="text-gray-600 text-sm leading-relaxed max-w-xs">

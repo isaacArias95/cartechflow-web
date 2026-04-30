@@ -27,12 +27,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="relative w-48 h-12">
+            <div className="relative w-14 h-14">
               <Image
                 src="/logo.png"
                 alt="CARTECHFLOW"
                 fill
-                style={{ objectFit: 'contain', objectPosition: 'left', mixBlendMode: 'screen' }}
+                style={{ objectFit: 'contain' }}
                 priority
               />
             </div>
