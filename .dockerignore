@@ -1,0 +1,16 @@
+node_modules
+.next
+.git
+.gitignore
+*.md
+.env
+.env.local
+.env*.local
+.mcp.json
+mcp.json
+.agents
+.claude
+skills-lock.json
+npm-debug.log*
+*.webp
+Gemini_Generated_Image_*.png
