@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { NAV_LINKS } from '@/lib/constants'
 
 export default function Footer() {
@@ -126,9 +127,25 @@ export default function Footer() {
           <p className="text-gray-700 text-xs">
             © {currentYear} CARTECHFLOW. Todos los derechos reservados.
           </p>
-          <p className="text-gray-700 text-xs">
-            Hecho con <span className="text-[#00D4FF]">IA</span> · Colombia
-          </p>
+          <div className="flex items-center gap-4 flex-wrap justify-center">
+            <Link
+              href="/aviso-de-privacidad"
+              className="text-gray-700 text-xs hover:text-[#00D4FF] transition-colors"
+            >
+              Aviso de Privacidad
+            </Link>
+            <span className="text-gray-800">·</span>
+            <Link
+              href="/terminos-y-condiciones"
+              className="text-gray-700 text-xs hover:text-[#00D4FF] transition-colors"
+            >
+              Términos y Condiciones
+            </Link>
+            <span className="text-gray-800">·</span>
+            <p className="text-gray-700 text-xs">
+              Hecho con <span className="text-[#00D4FF]">IA</span> · México
+            </p>
+          </div>
         </div>
       </div>
     </footer>
