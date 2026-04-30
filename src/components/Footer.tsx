@@ -111,10 +111,9 @@ export default function Footer() {
               Contacto
             </h4>
             <div className="flex flex-col gap-3 text-gray-600 text-sm">
-              <a href="mailto:hola@cartechflow.cloud" className="hover:text-[#00D4FF] transition-colors">
-                hola@cartechflow.cloud
+              <a href="mailto:contacto@cartechflow.cloud" className="hover:text-[#00D4FF] transition-colors">
+                contacto@cartechflow.cloud
               </a>
-              <span>cartechflow.cloud</span>
             </div>
           </div>
         </div>
@@ -143,7 +142,7 @@ export default function Footer() {
             </Link>
             <span className="text-gray-800">·</span>
             <p className="text-gray-700 text-xs">
-              Hecho con <span className="text-[#00D4FF]">IA</span> · México
+              Carbajal Arias Irving Isaac | RFC: CAAI951020QE1
             </p>
           </div>
         </div>
