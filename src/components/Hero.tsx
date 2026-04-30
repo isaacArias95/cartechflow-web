@@ -1,3 +1,20 @@
+import Image from 'next/image'
+
+const SPECIALTIES = [
+  'Automatización de procesos empresariales con IA',
+  'Integración de APIs y plataformas Meta',
+  'Mensajería empresarial a escala (WhatsApp Business API)',
+  'Infraestructura cloud y administración de servidores',
+  'Desarrollo de agentes autónomos e IA conversacional',
+  'Sistemas white-label para agencias y revendedores',
+]
+
+const BADGES = [
+  'META TECH PROVIDER',
+  'AUTOMATION INFRASTRUCTURE ARCHITECT',
+  'WHITE-LABEL SYSTEMS ENGINEER',
+]
+
 export default function Hero() {
   return (
     <section
@@ -30,7 +47,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-4 text-center pt-24 pb-16">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 text-center pt-24 pb-16">
         {/* Pre-label */}
         <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full" style={{ border: '1px solid rgba(0,212,255,0.25)', background: 'rgba(0,212,255,0.05)' }}>
           <span className="w-2 h-2 rounded-full bg-[#00D4FF] animate-glow-pulse" />
@@ -81,40 +98,111 @@ export default function Hero() {
           ))}
         </div>
 
-        {/* Video placeholder */}
-        <div className="relative w-full max-w-4xl mx-auto rounded-xl overflow-hidden glow-border" style={{ aspectRatio: '16/9' }}>
-          <div
-            className="absolute inset-0 flex flex-col items-center justify-center gap-4"
-            style={{ background: 'rgba(13,13,24,0.9)' }}
-          >
-            {/* Play icon ring */}
-            <div
-              className="animate-glow-pulse flex items-center justify-center rounded-full"
-              style={{
-                width: '72px',
-                height: '72px',
-                border: '2px solid rgba(0,212,255,0.4)',
-                background: 'rgba(0,212,255,0.05)',
-              }}
-            >
+        {/* Founder biography */}
+        <div
+          className="glass-card w-full max-w-5xl mx-auto p-8 md:p-12"
+          style={{ textAlign: 'left' }}
+        >
+          <div className="flex flex-col md:flex-row gap-10 md:gap-14 items-center md:items-start">
+
+            {/* Photo column */}
+            <div className="flex-shrink-0 flex flex-col items-center gap-4">
               <div
+                className="relative rounded-2xl overflow-hidden"
                 style={{
-                  width: 0,
-                  height: 0,
-                  borderTop: '12px solid transparent',
-                  borderBottom: '12px solid transparent',
-                  borderLeft: '20px solid rgba(0,212,255,0.6)',
-                  marginLeft: '4px',
+                  width: '220px',
+                  height: '260px',
+                  border: '1px solid rgba(0,212,255,0.25)',
+                  boxShadow: '0 0 40px rgba(0,212,255,0.1)',
                 }}
-              />
+              >
+                <Image
+                  src="/perfil.png"
+                  alt="Isaac Arias — Fundador de Car Tech Flow"
+                  fill
+                  style={{ objectFit: 'cover', objectPosition: 'center top' }}
+                  priority
+                />
+                {/* Cyan overlay line */}
+                <div
+                  className="absolute bottom-0 left-0 right-0"
+                  style={{ height: '3px', background: 'linear-gradient(90deg, transparent, #00D4FF, transparent)' }}
+                />
+              </div>
+
+              {/* Badges */}
+              <div className="flex flex-col gap-2 w-full">
+                {BADGES.map((badge) => (
+                  <div
+                    key={badge}
+                    className="text-center px-3 py-1 rounded"
+                    style={{
+                      background: 'rgba(0,212,255,0.05)',
+                      border: '1px solid rgba(0,212,255,0.2)',
+                      fontFamily: 'var(--font-orbitron), sans-serif',
+                      fontSize: '0.52rem',
+                      letterSpacing: '0.1em',
+                      color: '#00D4FF',
+                    }}
+                  >
+                    {badge}
+                  </div>
+                ))}
+              </div>
             </div>
-            <p
-              className="section-label"
-              style={{ fontSize: '0.65rem', color: 'rgba(0,212,255,0.5)' }}
-            >
-              VIDEO PLACEHOLDER · SEEDANCE 2.0 · PRÓXIMAMENTE
-            </p>
-            <p style={{ color: 'rgba(255,255,255,0.15)', fontSize: '0.7rem' }}>1920 × 1080 · 5 sec loop</p>
+
+            {/* Bio column */}
+            <div className="flex-1 min-w-0">
+              {/* Name & title */}
+              <div className="mb-6">
+                <h2
+                  className="text-white font-black text-3xl md:text-4xl mb-1"
+                  style={{ fontFamily: 'var(--font-orbitron), sans-serif' }}
+                >
+                  Isaac Arias
+                </h2>
+                <p
+                  className="gradient-text font-bold text-sm tracking-widest"
+                  style={{ fontFamily: 'var(--font-orbitron), sans-serif', fontSize: '0.7rem' }}
+                >
+                  Ingeniero en Informática | Meta Tech Provider | Fundador de Car Tech Flow
+                </p>
+              </div>
+
+              {/* Bio text */}
+              <div className="flex flex-col gap-4 mb-8">
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Soy Ingeniero en Informática con más de 5 años de experiencia construyendo infraestructura tecnológica para empresas que quieren crecer sin límites. Me especializo en el diseño e implementación de sistemas de automatización con inteligencia artificial, integración de APIs empresariales y arquitecturas escalables en la nube.
+                </p>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Fundé <span className="text-[#00D4FF] font-semibold">Car Tech Flow</span> con una visión clara: democratizar el acceso a tecnología de alto nivel para negocios de todos los tamaños. Trabajo directamente con cada cliente para identificar sus cuellos de botella operativos y convertirlos en sistemas inteligentes que funcionan solos, 24/7.
+                </p>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Como proveedor tecnológico acreditado por Meta, tengo acceso a infraestructura y herramientas empresariales que permiten implementar soluciones de mensajería, automatización y gestión de datos a escala real. También desarrollo sistemas <span className="text-[#00D4FF] font-semibold">white-label</span> que permiten a otras agencias ofrecer mis soluciones como propias.
+                </p>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Mi enfoque es siempre técnico, directo y orientado a resultados: menos teoría, más sistemas funcionando.
+                </p>
+              </div>
+
+              {/* Specialties */}
+              <div>
+                <h3
+                  className="text-white font-bold mb-4"
+                  style={{ fontFamily: 'var(--font-orbitron), sans-serif', fontSize: '0.65rem', letterSpacing: '0.15em', textTransform: 'uppercase' }}
+                >
+                  Especialidades
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {SPECIALTIES.map((s) => (
+                    <div key={s} className="flex items-start gap-2">
+                      <span className="text-[#00D4FF] mt-0.5 flex-shrink-0" style={{ fontSize: '0.6rem' }}>▸</span>
+                      <span className="text-gray-400 text-xs leading-relaxed">{s}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
