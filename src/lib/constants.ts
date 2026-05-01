@@ -90,6 +90,6 @@ export const TESTIMONIALS = [
   },
 ]
 
-export const WHATSAPP_NUMBER = '573001234567'
+export const WHATSAPP_NUMBER = '523311162367'
 export const WHATSAPP_MESSAGE =
   'Hola, me interesa conocer más sobre los servicios de automatización con IA de CARTECHFLOW.'
