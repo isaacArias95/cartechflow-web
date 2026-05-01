@@ -14,7 +14,7 @@ const sections = [
     content: `CAR TECH FLOW, con domicilio en Av. Toledo 189, Hacienda Santa Fe, Tlajomulco de Zúñiga, Jalisco, México, es responsable del tratamiento, uso y protección de los datos personales que recabamos de nuestros clientes, prospectos, usuarios, aliados comerciales y proveedores.
 
 Para cualquier asunto relacionado con este Aviso de Privacidad, puede contactarnos mediante:
-• Correo electrónico: contacto@cartechflow.com
+• Correo electrónico: contacto@cartechflow.cloud
 • Sitio web: www.cartechflow.cloud`,
   },
   {
@@ -99,7 +99,7 @@ Toda transferencia se realizará bajo medidas de seguridad y confidencialidad ad
 • Cancelar sus datos cuando legalmente proceda
 • Oponerse al tratamiento de los mismos
 
-Para ejercer sus derechos ARCO, deberá enviar una solicitud al correo: contacto@cartechflow.com.
+Para ejercer sus derechos ARCO, deberá enviar una solicitud al correo: contacto@cartechflow.cloud.
 
 La solicitud deberá contener:
 • Nombre del titular

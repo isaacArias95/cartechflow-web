@@ -59,8 +59,8 @@ export default function Footer() {
               Contacto
             </h4>
             <div className="flex flex-col gap-3 text-gray-600 text-sm">
-              <a href="mailto:contacto@cartechflow.com" className="hover:text-[#00D4FF] transition-colors">
-                contacto@cartechflow.com
+              <a href="mailto:contacto@cartechflow.cloud" className="hover:text-[#00D4FF] transition-colors">
+                contacto@cartechflow.cloud
               </a>
             </div>
 

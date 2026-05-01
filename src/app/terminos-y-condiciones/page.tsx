@@ -265,8 +265,8 @@ export default function TerminosYCondiciones() {
         <div className="mt-12 text-center">
           <p className="text-gray-600 text-xs">
             ¿Dudas? Escríbenos a{' '}
-            <a href="mailto:contacto@cartechflow.com" className="text-[#00D4FF] hover:text-white transition-colors">
-              contacto@cartechflow.com
+            <a href="mailto:contacto@cartechflow.cloud" className="text-[#00D4FF] hover:text-white transition-colors">
+              contacto@cartechflow.cloud
             </a>
           </p>
           <Link
