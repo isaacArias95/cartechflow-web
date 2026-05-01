@@ -24,10 +24,10 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 lg:h-24">
+        <div className="flex items-center justify-between h-28 lg:h-36">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3 group">
-            <div className="relative w-20 h-20 lg:w-24 lg:h-24">
+          <a href="#" className="flex items-center group">
+            <div className="relative w-28 h-28 lg:w-36 lg:h-36 transition-all duration-300">
               <Image
                 src="/logo.png"
                 alt="CARTECHFLOW"
