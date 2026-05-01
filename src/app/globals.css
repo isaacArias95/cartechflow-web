@@ -2,6 +2,24 @@
 
 html {
   scroll-behavior: smooth;
+  /* Offset anchor scroll for fixed navbar: h-28 mobile (7rem) / h-36 desktop (9rem) */
+  scroll-padding-top: 7rem;
+}
+
+@media (min-width: 1024px) {
+  html {
+    scroll-padding-top: 9rem;
+  }
+}
+
+section[id] {
+  scroll-margin-top: 7rem;
+}
+
+@media (min-width: 1024px) {
+  section[id] {
+    scroll-margin-top: 9rem;
+  }
 }
 
 body {

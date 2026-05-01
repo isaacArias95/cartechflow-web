@@ -47,7 +47,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-4 text-center pt-24 pb-16">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 text-center pt-36 lg:pt-44 pb-16">
         {/* Pre-label */}
         <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full" style={{ border: '1px solid rgba(0,212,255,0.25)', background: 'rgba(0,212,255,0.05)' }}>
           <span className="w-2 h-2 rounded-full bg-[#00D4FF] animate-glow-pulse" />
