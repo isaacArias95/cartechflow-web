@@ -27,6 +27,13 @@ export const metadata: Metadata = {
     locale: 'es_CO',
     type: 'website',
   },
+  icons: {
+    icon: [
+      { url: '/logo.png', type: 'image/png' },
+    ],
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
