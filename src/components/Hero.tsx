@@ -100,18 +100,17 @@ export default function Hero() {
 
         {/* Founder biography */}
         <div
-          className="glass-card w-full max-w-5xl mx-auto p-8 md:p-12"
+          className="glass-card w-full max-w-5xl mx-auto p-5 sm:p-8 md:p-12"
           style={{ textAlign: 'left' }}
         >
-          <div className="flex flex-col md:flex-row gap-10 md:gap-14 items-center md:items-start">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-14 items-center md:items-start">
 
             {/* Photo column */}
-            <div className="flex-shrink-0 flex flex-col items-center gap-4">
+            <div className="flex-shrink-0 flex flex-col items-center gap-4 w-full md:w-auto">
               <div
-                className="relative rounded-2xl overflow-hidden"
+                className="relative rounded-2xl overflow-hidden w-44 sm:w-56 md:w-[220px]"
                 style={{
-                  width: '220px',
-                  height: '260px',
+                  aspectRatio: '220/260',
                   border: '1px solid rgba(0,212,255,0.25)',
                   boxShadow: '0 0 40px rgba(0,212,255,0.1)',
                 }}
@@ -131,17 +130,17 @@ export default function Hero() {
               </div>
 
               {/* Badges */}
-              <div className="flex flex-col gap-2 w-full">
+              <div className="flex flex-col gap-2 w-44 sm:w-56 md:w-[220px]">
                 {BADGES.map((badge) => (
                   <div
                     key={badge}
-                    className="text-center px-3 py-1 rounded"
+                    className="text-center px-2 py-1 rounded break-words"
                     style={{
                       background: 'rgba(0,212,255,0.05)',
                       border: '1px solid rgba(0,212,255,0.2)',
                       fontFamily: 'var(--font-orbitron), sans-serif',
-                      fontSize: '0.52rem',
-                      letterSpacing: '0.1em',
+                      fontSize: '0.48rem',
+                      letterSpacing: '0.08em',
                       color: '#00D4FF',
                     }}
                   >

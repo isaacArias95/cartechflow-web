@@ -22,10 +22,11 @@ section[id] {
   }
 }
 
-body {
+html, body {
   background-color: #0A0A0F;
   color: #E0E0E0;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 ::-webkit-scrollbar { width: 6px; }

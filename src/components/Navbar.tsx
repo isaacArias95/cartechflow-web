@@ -17,17 +17,17 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 overflow-x-hidden ${
         scrolled
           ? 'bg-[#0A0A0F]/95 backdrop-blur-md border-b border-[rgba(0,212,255,0.12)] shadow-lg'
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-28 lg:h-36">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-20 sm:h-28 lg:h-36">
           {/* Logo */}
-          <a href="#" className="flex items-center group">
-            <div className="relative w-28 h-28 lg:w-36 lg:h-36 transition-all duration-300">
+          <a href="#" className="flex items-center flex-shrink-0 group">
+            <div className="relative w-20 h-20 sm:w-28 sm:h-28 lg:w-36 lg:h-36 transition-all duration-300">
               <Image
                 src="/logo.png"
                 alt="CARTECHFLOW"
