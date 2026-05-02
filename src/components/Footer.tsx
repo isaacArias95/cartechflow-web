@@ -159,6 +159,13 @@ export default function Footer() {
               Términos y Condiciones
             </Link>
             <span className="text-gray-800">·</span>
+            <Link
+              href="/eliminacion-de-datos"
+              className="text-gray-700 text-xs hover:text-[#00D4FF] transition-colors"
+            >
+              Eliminación de Datos
+            </Link>
+            <span className="text-gray-800">·</span>
             <p className="text-gray-700 text-xs">
               Carbajal Arias Irving Isaac | RFC: CAAI951020QE1
             </p>

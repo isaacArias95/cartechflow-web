@@ -36,9 +36,42 @@ export const metadata: Metadata = {
   },
 }
 
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'CARTECHFLOW',
+  url: 'https://cartechflow.cloud',
+  logo: 'https://cartechflow.cloud/logo.png',
+  description: 'Agencia de automatización con inteligencia artificial para empresas.',
+  contactPoint: {
+    '@type': 'ContactPoint',
+    email: 'contacto@cartechflow.cloud',
+    contactType: 'customer service',
+    availableLanguage: 'Spanish',
+  },
+  sameAs: [],
+}
+
+const webSiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'CARTECHFLOW',
+  url: 'https://cartechflow.cloud',
+}
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es" className={`${orbitron.variable} ${spaceGrotesk.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
+        />
+      </head>
       <body
         className="antialiased"
         style={{ fontFamily: 'var(--font-space), sans-serif' }}
