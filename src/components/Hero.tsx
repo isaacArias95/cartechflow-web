@@ -164,14 +164,14 @@ export default function Hero() {
                   className="gradient-text font-bold text-sm tracking-widest"
                   style={{ fontFamily: 'var(--font-orbitron), sans-serif', fontSize: '0.7rem' }}
                 >
-                  Ingeniero en Informática | Meta Tech Provider | Fundador de Car Tech Flow
+                  Ingeniero en Sistemas | Meta Tech Provider | Fundador de Car Tech Flow
                 </p>
               </div>
 
               {/* Bio text */}
               <div className="flex flex-col gap-4 mb-8">
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  Soy Ingeniero en Informática con más de 5 años de experiencia construyendo infraestructura tecnológica para empresas que quieren crecer sin límites. Me especializo en el diseño e implementación de sistemas de automatización con inteligencia artificial, integración de APIs empresariales y arquitecturas escalables en la nube.
+                  Soy Ingeniero en Sistemas con más de 2 años de experiencia construyendo infraestructura tecnológica para empresas que quieren crecer sin límites. Me especializo en el diseño e implementación de sistemas de automatización con inteligencia artificial, integración de APIs empresariales y arquitecturas escalables en la nube.
                 </p>
                 <p className="text-gray-400 text-sm leading-relaxed">
                   Fundé <span className="text-[#00D4FF] font-semibold">Car Tech Flow</span> con una visión clara: democratizar el acceso a tecnología de alto nivel para negocios de todos los tamaños. Trabajo directamente con cada cliente para identificar sus cuellos de botella operativos y convertirlos en sistemas inteligentes que funcionan solos, 24/7.
