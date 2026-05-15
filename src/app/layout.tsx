@@ -63,6 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es" className={`${orbitron.variable} ${spaceGrotesk.variable}`}>
       <head>
+        <meta name="facebook-domain-verification" content="wa26470jyhglc8y4bzqzedxsrkixto" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
