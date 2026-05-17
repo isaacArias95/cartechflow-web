@@ -30,9 +30,12 @@ export default function Contact() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...form, source: 'cartechflow.cloud' }),
       })
-      if (!res.ok) throw new Error(`Error ${res.status}`)
+      const data = await res.json().catch(() => ({}))
+      console.log('[contact] api response:', res.status, data)
+      if (!res.ok) throw new Error(data?.detail ?? `Error ${res.status}`)
       setSubmitted(true)
-    } catch {
+    } catch (err) {
+      console.error('[contact] submit error:', err)
       setError('No se pudo enviar el mensaje. Inténtalo de nuevo o escríbenos a contacto@cartechflow.cloud')
     } finally {
       setLoading(false)
