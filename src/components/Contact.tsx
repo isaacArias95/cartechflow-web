@@ -2,6 +2,8 @@
 
 import { useState, type FormEvent } from 'react'
 
+const WEBHOOK_URL = 'https://n8n.cartechflow.cloud/webhook/66b819b1-55bf-40cb-93e4-ae1d7bb4bf69'
+
 export default function Contact() {
   const [form, setForm] = useState({
     name: '',
@@ -11,15 +13,30 @@ export default function Contact() {
     message: '',
   })
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))
   }
 
-  function handleSubmit(e: FormEvent) {
+  async function handleSubmit(e: FormEvent) {
     e.preventDefault()
-    console.log('Contact form submission:', form)
-    setSubmitted(true)
+    setLoading(true)
+    setError('')
+    try {
+      const res = await fetch(WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...form, source: 'cartechflow.cloud' }),
+      })
+      if (!res.ok) throw new Error(`Error ${res.status}`)
+      setSubmitted(true)
+    } catch {
+      setError('No se pudo enviar el mensaje. Inténtalo de nuevo o escríbenos a contacto@cartechflow.cloud')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -181,8 +198,16 @@ export default function Contact() {
                   />
                 </div>
 
-                <button type="submit" className="btn-cyber w-full text-center" style={{ marginTop: '4px' }}>
-                  Enviar Mensaje
+                {error && (
+                  <p className="text-red-400 text-xs text-center">{error}</p>
+                )}
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="btn-cyber w-full text-center"
+                  style={{ marginTop: '4px', opacity: loading ? 0.6 : 1, cursor: loading ? 'not-allowed' : 'pointer' }}
+                >
+                  {loading ? 'Enviando...' : 'Enviar Mensaje'}
                 </button>
               </form>
             )}
