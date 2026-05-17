@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from 'react'
 
-const WEBHOOK_URL = 'https://n8n.cartechflow.cloud/webhook/66b819b1-55bf-40cb-93e4-ae1d7bb4bf69'
+const WEBHOOK_URL = '/api/contact'
 
 export default function Contact() {
   const [form, setForm] = useState({
